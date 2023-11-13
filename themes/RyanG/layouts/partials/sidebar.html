@@ -1,0 +1,8 @@
+<div class="sidebar">
+    <ul>
+      {{ range .Pages }}
+        <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+</div>
+<link rel="stylesheet" href="{{ "css/sidebar.css" | absURL }}">

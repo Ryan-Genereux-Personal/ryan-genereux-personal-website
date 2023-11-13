@@ -1,0 +1,38 @@
+/* Apply styles to all div elements */
+div {
+    background-color: #cad6ec;
+    width: 250px;
+    height: 977px;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Apply styles to all anchor elements */
+a {
+    font-size: 20px;
+    text-decoration: none; /* Remove default underline */
+    color: grey;
+}
+
+/* Apply styles to unvisited links */
+a:link {
+    color: grey;
+}
+
+/* Apply styles to visited links */
+a:visited {
+    color: grey;
+}
+
+/* Apply styles to links on hover */
+a:hover {
+    color: rgb(65, 64, 64);
+}
+
+/* Apply styles to active links (when clicked) */
+a:active {
+    color: black;
+}
