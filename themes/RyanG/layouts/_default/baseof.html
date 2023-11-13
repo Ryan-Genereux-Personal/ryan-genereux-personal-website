@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }}</title>
-    <link rel="stylesheet" href="{{ "css/sidebar.css" | absURL }}">
+    <link rel="stylesheet" href="/css/sidebar.css" >
+    <link rel="stylesheet" href="/css/homepage.css">
 </head>
 <body>
     <div class="sidebar">
         <ul>
             <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-            {{ range .Site.Pages }}
+            {{ range .Site.RegularPages }}
+              {{ if and .Params.showInSidebar (not .Params.draft) }}
                 <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
             {{ end }}
         </ul>
     </div>

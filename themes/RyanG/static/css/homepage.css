@@ -1,0 +1,19 @@
+/* static/css/homepage.css */
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-section {
+    max-width: 40%; /* Adjust the width as needed */
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.text-section {
+    max-width: 55%; /* Adjust the width as needed */
+}
