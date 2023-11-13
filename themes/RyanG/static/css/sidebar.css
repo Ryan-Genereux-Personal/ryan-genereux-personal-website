@@ -1,38 +1,45 @@
-/* Apply styles to all div elements */
-div {
+/* Apply styles to the sidebar */
+.sidebar {
     background-color: #cad6ec;
     width: 250px;
-    height: 977px;
+    height: 100%;
     padding: 30px;
     position: fixed;
     top: 0;
     left: 0;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
 }
 
-/* Apply styles to all anchor elements */
-a {
+/* Apply styles to all anchor elements inside the sidebar */
+.sidebar a {
     font-size: 20px;
-    text-decoration: none; /* Remove default underline */
+    text-decoration: none;
     color: grey;
 }
 
-/* Apply styles to unvisited links */
-a:link {
+/* Apply styles to unvisited links inside the sidebar */
+.sidebar a:link {
     color: grey;
 }
 
-/* Apply styles to visited links */
-a:visited {
+/* Apply styles to visited links inside the sidebar */
+.sidebar a:visited {
     color: grey;
 }
 
-/* Apply styles to links on hover */
-a:hover {
+/* Apply styles to links on hover inside the sidebar */
+.sidebar a:hover {
     color: rgb(65, 64, 64);
 }
 
-/* Apply styles to active links (when clicked) */
-a:active {
+/* Apply styles to active links (when clicked) inside the sidebar */
+.sidebar a:active {
     color: black;
+}
+
+/* Apply styles to the content container */
+.content {
+    margin-left: 250px; /* Set the margin to be equal to the width of the sidebar */
+    padding: 20px; /* Add padding to the content for better spacing */
+    box-sizing: border-box;
 }
