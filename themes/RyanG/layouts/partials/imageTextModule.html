@@ -1,0 +1,24 @@
+{{ $image := .Params.image }}
+{{ $text := .Params.text }}
+
+{{ if mod .UniqueID 2 }} <!-- Check if the iteration is odd or even -->
+    <!-- Image on the left, text on the right -->
+    <div class="image-text-module">
+        <div class="image">
+            <img src="{{ $image }}" alt="Image">
+        </div>
+        <div class="text">
+            {{ $text | markdownify }}
+        </div>
+    </div>
+{{ else }}
+    <!-- Text on the left, image on the right -->
+    <div class="image-text-module">
+        <div class="text">
+            {{ $text | markdownify }}
+        </div>
+        <div class="image">
+            <img src="{{ $image }}" alt="Image">
+        </div>
+    </div>
+{{ end }}
