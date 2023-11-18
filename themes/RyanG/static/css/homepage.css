@@ -1,19 +1,63 @@
-/* static/css/homepage.css */
-.homepage {
+/* Apply styles to the sidebar */
+.sidebar {
+    background-color: #cad6ec;
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to all anchor elements inside the sidebar */
+.sidebar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+}
+
+/* Apply styles to unvisited links inside the sidebar */
+.sidebar a:link {
+    color: grey;
+}
+
+/* Apply styles to visited links inside the sidebar */
+.sidebar a:visited {
+    color: grey;
+}
+
+/* Apply styles to links on hover inside the sidebar */
+.sidebar a:hover {
+    color: rgb(65, 64, 64);
+}
+
+/* Apply styles to active links (when clicked) inside the sidebar */
+.sidebar a:active {
+    color: black;
+}
+
+/* Apply styles to the content container */
+.content {
+    margin-left: 250px; /* Set the margin to be equal to the width of the sidebar */
+    padding: 20px; /* Add padding to the content for better spacing */
+    box-sizing: border-box;
+}
+
+/* In your CSS file (styles.css) */
+.main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url("/images/DecentPersonalPicture.jpg"); /* Path to your image */
+    background-size: cover; /* Adjust how the image covers the container */
+    background-position: center; /* Center the background image */
+    color: #ffffff; /* Set text color to contrast with the background image */
 }
 
-.image-section {
-    max-width: 40%; /* Adjust the width as needed */
-}
-
-.image-section img {
-    width: 100%;
-    height: auto;
-}
-
-.text-section {
-    max-width: 55%; /* Adjust the width as needed */
+.text-content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Background color for the text area */
 }

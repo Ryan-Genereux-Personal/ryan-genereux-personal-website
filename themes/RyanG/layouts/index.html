@@ -1,15 +1,24 @@
-<!-- layouts/index.html -->
-{{ define "main" }}
-    <section class="homepage">
-        <!--  <div class="image-section">
-             <img src="/images/your-image.jpg" alt="Your Name"> 
-        </div> -->
-        <div class="text-section">
-            <h1>Your Name</h1>
-            <p>Welcome to my portfolio website. I am a passionate developer...</p>
-            <!-- Add more text or content as needed -->
-        </div>
-    </section>
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/homepage.css"> <!-- Link to your sidebar CSS -->
+    <!-- Other head content here -->
+</head>
+<body>
+    <!-- Include the sidebar partial -->
+    {{ partial "sidebar.html" . }}
 
-    <link rel="stylesheet" href="../static/css/homepage.css">
-{{ end }}
+    <!-- Main content area -->
+    <div class="content">
+        <div class="main-content">
+            <div class="text-content">
+                <h1>Welcome to My Site!</h1>
+                <p>Your introductory text goes here...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional scripts/stylesheets etc. -->
+</body>
+</html>

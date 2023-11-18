@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/css/sidebar.css"> <!-- FIXME change to standard hugo-->
-    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/homepage.css"> <!-- Link to your sidebar CSS -->
+    <!-- Other head content here -->
 </head>
 <body>
+    <!-- Include the sidebar partial -->
     {{ partial "sidebar.html" . }}
+
+    <!-- Main content area -->
     <div class="content">
-        {{ block "main" . }}{{ end }}
+        <!-- Your page content goes here -->
+        {{ block "main" . }}
+        {{ end }}
     </div>
+
+    <!-- Additional scripts/stylesheets etc. -->
 </body>
 </html>
+
 
