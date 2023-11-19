@@ -11,7 +11,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 100vh; /* Adjust the height as needed */
-    background-image: url("/ryan-genereux-personal-website/images/DecentPersonalPicture.jpg"); /* Path to your image */
+    background-image: url("../images/DecentPersonalPicture.jpg"); /* Path to your image */
     background-size: cover; /* Adjust how the image covers the container */
     background-position: center; /* Center the background image */
     color: #ffffff; /* Set text color to contrast with the background image */

@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date: 2023-11-17T10:00:00Z
-layout: "projects"
+type: "projects"
 ---
 
 # Projects

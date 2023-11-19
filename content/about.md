@@ -1,13 +1,9 @@
 ---
 title: "About Me"
 date: 2023-11-17T10:00:00Z
-layout: "about.html"  # Use the custom about.html layout
+type: "about"
 ---
 
 # About Me
 
-This is where you write about yourself...
-
-![Your Image](../themes/RyanG/static/images/DecentPersonalPicture.jpg)
-
-More about yourself...
+Write about me
