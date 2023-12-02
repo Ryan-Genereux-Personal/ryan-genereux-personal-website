@@ -1,3 +1,12 @@
+{{define "head"}}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/aboutnew.css"> 
+{{ end }}
+
 {{ define "main" }}
-    {{ .Content}}
+    <div class = "about-content">
+        <img class = "image-content" src="{{.Site.BaseURL }}images/Me_In_A_Suit_In_A_Tree.JPG"/>
+        <div class = "about-text">
+            {{ .Content}}
+        </div>
+    </div>
 {{ end }}

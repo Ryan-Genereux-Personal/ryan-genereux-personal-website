@@ -4,22 +4,21 @@
 <head>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/homepage.css"> <!-- "/ryan-genereux-personal-website/css/homepage.css" -->
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/sidebar.css">
-    <!-- Other head content here -->
 </head>
 <body>
-    <!-- Include the sidebar partial -->
     {{ partial "sidebar.html" . }}
 
-    <!-- Main content area -->
     <div class="content">
         <div class="main-content">
+            <img class = "main-content" src="{{.Site.BaseURL }}images/DecentPersonalPicture.jpg"/>
             <div class="text-content">
-                <h1>Welcome to My Site!</h1>
-                <p>Your introductory text goes here...</p>
+                <h1>Hello there!</h1>
+                <p>My name is Ryan Genereux and I am a third year computer engineer,
+                    this website is a random project I decided to start so I could 
+                    post the things I do. 
+                </p>
             </div>
         </div>
     </div>
-
-    <!-- Additional scripts/stylesheets etc. -->
 </body>
 </html>

@@ -1,0 +1,16 @@
+.about-content {
+    margin-left: 270px;
+}
+
+.about-text {
+    margin-left: 760px;
+    margin-top: -900px;
+}
+
+.image-content {
+    position: center;
+    display: block;
+    object-fit: fill;
+    height: 1000px;
+    width: auto;
+}

@@ -1,0 +1,11 @@
+.project-list {
+    margin-left: 300px;
+}
+.project-link a {
+    display:flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    font-size: 2rem;
+    border-bottom: 1px dotted gray;
+}

@@ -1,7 +1,6 @@
-/* Apply styles to the content container */
+
 .content {
-    margin-left: 250px; /* Set the margin to be equal to the width of the sidebar */
-    padding: 20px; /* Add padding to the content for better spacing */
+    margin-left: 250px;  
     box-sizing: border-box;
 }
 
@@ -10,15 +9,18 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh; /* Adjust the height as needed */
-    background-image: url("{{ .Site.BaseURL }}images/DecentPersonalPicture.jpg"); /* Path to your image */
-    background-size: cover; /* Adjust how the image covers the container */
-    background-position: center; /* Center the background image */
-    color: #ffffff; /* Set text color to contrast with the background image */
+    height: auto;
+}
+
+.main-content img {
+    position: center;
+    display: block;
+    object-fit: fill;
+    height: 1000px;
+    width: auto;
 }
 
 .text-content {
     flex: 1;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Background color for the text area */
 }

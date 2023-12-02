@@ -1,6 +1,8 @@
-<!-- layouts/about/single.html -->
+{{define "head"}}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/about.css"> 
+{{ end }}
+
 {{ define "main" }}
-    {{ partial "sidebar.html" . }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
 {{ end }}

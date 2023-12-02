@@ -2,19 +2,16 @@
 <html>
 <head>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/sidebar.css"> 
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/about.css">
-    <!-- Other head content here -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/homepage.css">
+    {{ block "head" .}}
+    {{ end }}
 </head>
 <body>
     <!-- Include the sidebar partial -->
     {{ partial "sidebar.html" . }}
 
-    <!-- Main content area -->
-    <div class="content">
-        <!-- Your page content goes here -->
-        {{ block "main" . }}
-        {{ end }}
-    </div>
+    {{ block "main" . }}
+    {{ end }}
 
     <!-- Additional scripts/stylesheets etc. -->
 </body>

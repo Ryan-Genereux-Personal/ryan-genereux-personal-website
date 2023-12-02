@@ -1,3 +1,14 @@
-{{ define "main" }}
-    {{ .Content }}
+{{define "head"}}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/projects.css"> 
 {{ end }}
+
+{{ define "main" }}
+    <div class="project-list">
+        {{ range where .Site.RegularPages "Section" "project" }}
+            <div class="project-link">
+                <a href="{{ .RelPermalink }}">{{ .Title }} </a>
+            </div>
+        {{ end }}
+    </div>
+
+{{ end }} 
